@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,6 +20,11 @@
         }
     </style>-->
     <style>
+        body {
+            background-color: white;
+        }
+            
+    
         h1{
             color: red;
             background-color: rebeccapurple;
@@ -34,9 +39,52 @@
         input[id="aprobar1"]{
             border: green 3px solid;
         }
+        input:focus{
+            background-color: aquamarine;
+        a:link{
+            background-color: yellow;
+            color: green;
+        }
+           
+        a:visited{
+            background-color: blue;
+            color: white;
+        }
+        a:hover{
+            background-color: pink;
+        }
+        a:active{
+            background-color: green;
+        }
+        q:lang(es){
+            quotes:;
+            background-color: green;
+           
+        }
+        .cr7{
+            color: yellow;
+        }
+        .cr71{
+            color: greenyellow;
+        }
     </style>
     <title>Document</title>
 </head>
+
+<p class="p2">parrafo1</p>
+<p class="p1">parrafo2</p>
+<p class="mayusculas">Parrafo mayusculas</p>
+<form actiom="procesar.php" method="get">
+    <fieldset>
+        <legend>Datos personales</legend>
+            <label><input type="text" name="nombre" id="nombre"></label>
+            <label><input type="text" name="nombre" id="nombre"></label>
+    </fieldset>        
+    <label id="">aprobar<input type="checkbox" name="aprobar" id="aprobar1"></label>
+<form>
+    <p>Platón: <q class="cr71"> <span class="cr7">"Solo sé que no se nada"</span></q></p>
+    <p>Platón: <q> just know that I don't know anything</q></p>
+    <a href="https://www.mclibre.org/consultar/htmlcss/" target="_blank">Apuntes</a>
 <body>
    
    <h1>
@@ -65,10 +113,5 @@
     <mark><small><strong>Pablo Neruda</strong></small></mark>
 
 </body>
-<p class="p2">parrafo1</p>
-<p class="p1">parrafo2</p>
-<p class="mayusculas">Parrafo mayusculas</p>
-<form actiom="procesar.php" method="get">
-    <label id="">aprobar<input type="checkbox" name="aprobar" id="aprobar1"></label>
-</form>
+
 </html>
